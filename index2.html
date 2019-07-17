@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OA系统</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/Default.min.css"rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/borrow-system.css" rel="stylesheet">
+    <link href="css/sidebar.css" rel="stylesheet">
+    <link href="css/main.css">
+</head>
+<body>
+
+<div class="headerPanel navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container" style="width:100%">
+        <div class="logo">中南院业绩评价系统</div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+
+                <li>
+                    <a href="javascript:void(0);" class="user">
+                        <img src="资料借用系统_files/Images/bims/placeholder.gif">代用名(25008)
+                    </a>
+                </li>
+                <li><a href="http://oa.msdi.cn/Bims/Account/Logout">退出</a></li>
+            </ul>
+        </div>
+
+
+        <div class="userPanel" style="z-index: 100; display: none;">
+            <div class="basic">
+                <img src="./资料借用系统_files/placeholder.gif">
+                <div class="text">
+                    <strong>张晓宇<em>25008</em></strong>
+                    <span>信息与数字技术工程公司<br>信息工程所</span>
+                </div>
+            </div>
+            <div class="links" style="text-align: center; display:none">
+                <a href="javascript:void(0);" onclick="changePassword();">修改密码</a>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container" style="width:100%" >
+    <div class="mainArea">
+        <div class="side" style="height: 686px;">
+            <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+                <div class="nano has-scrollbar">
+                    <div class="nano-content active" tabindex="0" style="right: -17px;">
+                        <ul class="d-block">
+                            <div class="logo"><a href="index.html"><!-- <img src="assets/images/logo.png" alt="" /> --><span>Focus</span></a></div>
+
+                            <li><a class="sidebar-sub-toggle"><i class="ti-bar-chart-alt"></i>  Charts  <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                            </li>
+                            <li><a href="#"><i class="ti-calendar"></i>首页</a></li>
+                            <li><a href="#"><i class="ti-email"></i> 合同管理</a></li>
+                            <li><a href="#"><i class="ti-email"></i> 档案管理</a></li>
+                            <li><a href="#"><i class="ti-email"></i> 印章管理</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="nano-pane" style="display: none;"><div class="nano-slider" style="height: 316px; transform: translate(0px, 0px);"></div></div></div>
+            </div>
+            <div class="nav">
+                <div class="menu"><ul>
+                </ul></div>
+            </div>
+        </div>
+
+
+        <div class="listcontent" id="listcontent">
+            <div id="listview" data-role="listview" class="k-widget k-listview" role="listbox">
+                <div class="row" style="margin-left: 20px;">
+                    <div class="col" style="background-color: #fff; width: 75%;">
+
+                        <div class="container-fluid">
+                            <div class="kt-portlet-title">
+                                <ul class="nav nav-tabs  nav-tabs-line" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#kt_tabs_1_1" role="tab">待考核</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#kt_tabs_1_3" role="tab" style="color: #bbb;">已考核</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="panel-group"  id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default">代用名</button>
+                                            <button type="button" class="btn btn-default">代用名</button>
+                                            <button type="button" class="btn btn-default">代用名</button>
+                                            <button type="button" class="btn btn-default">代用名</button>
+                                            <button type="button" class="btn btn-default">代用名</button>
+                                            <button type="button" class="btn btn-default">代用名</button>
+                                            <button type="button" class="btn btn-default">代用名</button>
+                                            <button type="button" class="btn btn-default">代用名</button>
+                                            <button type="button" class="btn btn-default">代用名</button>
+                                            <button type="button" class="btn btn-default">代用名</button>
+
+                                        </div>
+                                        <a data-toggle="collapse" data-parent="#accordion"
+                                           href="#collapseOne" style="float: right;">
+                                            <i class="fa fa-angle-down" style="font-size: 30px;"></i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse ">
+                                    <div class="panel-body">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default">代用名</button>
+                                            <button type="button" class="btn btn-default">代用名</button>
+                                            <button type="button" class="btn btn-default">代用名</button>
+                                            <button type="button" class="btn btn-default">代用名</button>
+                                            <button type="button" class="btn btn-default">代用名</button>
+                                            <button type="button" class="btn btn-default">代用名</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-left: 20px;">
+                    <div class="col" style="background-color: #fff; width: 75%;">
+
+                        <div class="container-fluid">
+                            <div class="kt-portlet-title">
+                                <ul class="nav nav-tabs  nav-tabs-line" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#kt_tabs_1_1" role="tab">产品统计</a>
+                                    </li>
+
+
+                                </ul>
+
+                            </div>
+                            <div class="card" style="margin-top: 20px;padding-left: 15px;padding-right: 15px;">
+                                <div class="card-title">
+
+
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>项目名称</th>
+                                                <th>产品名称</th>
+                                                <th>附件</th>
+                                                <th>产品调整系数</th>
+                                                <th>折算工作量</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>zn engineering</td>
+                                                <td>ydkq</td>
+                                                <td>daiyongm11</td>
+                                                <td style=" background-color:bisque;" class="" role="gridcell">1.00</td>
+                                                <td>0.5000</td>
+                                            </tr>
+                                            <tr>
+
+                                                <th scope="row">1</th>
+                                                <td>zn engineering</td>
+                                                <td>ydkq</td>
+                                                <td>daiyongm11</td>
+                                                <td style=" background-color:bisque;" class="" role="gridcell">1.00</td>
+                                                <td>0.5000</td>
+                                            </tr>
+                                            <tr>
+
+                                                <th scope="row">1</th>
+                                                <td>zn engineering</td>
+                                                <td>ydkq</td>
+                                                <td>daiyongm11</td>
+                                                <td style=" background-color:bisque;" class="" role="gridcell">1.00</td>
+                                                <td>0.5000</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="Scripts/menu.min.js"></script>
+</body>
+</html>

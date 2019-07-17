@@ -1,0 +1,478 @@
+/*------------------------业绩评价系统----------------------------*/
+body {
+  
+    background-color: #fff !important;
+}
+
+.headerPanel {
+    zoom: 1;
+    height: 60px;
+    background-color: #3c95d2;
+    overflow: initial;
+}
+
+    .headerPanel .logo {
+        float: left;
+       font-size: 23px;
+	   color: #fff;
+	   font-weight: bold;
+        width: 350px;
+        height: 40px;
+        margin: 18px 0 0 0;
+        background-repeat: no-repeat;
+    }
+.mainArea .mainPanel {
+    clear: both;
+    float: none;
+}
+
+.typetree {
+    float: left;
+    width: 16%;
+}
+
+.listcontent {
+    float: right;
+    width: 84%;
+}
+
+.searchpanel {
+    clear: both;
+    display: block;
+    height: 70px;
+    margin-bottom: 15px;
+    background-color: #67A7D0;
+}
+
+    .searchpanel .searchBar {
+        padding: 18px 0 0 20px;
+        margin: 0;
+        float: left;
+        width: 50%;
+    }
+
+        .searchpanel .searchBar .form-control {
+            width: 60%;
+            float: left;
+            border-radius: 0;
+            margin-right: 10px;
+        }
+
+  
+
+        .searchpanel .buttonBar div:first-child, .searchpanel .btn-group div + div {
+            margin-left: 15px;
+        }
+
+        .searchpanel .btn-group div {
+            float: right;
+            padding-top: 18px;
+            position: relative;
+        }
+
+
+            .searchpanel .btn-group div button {
+                padding: 6px 28px;
+            }
+
+            .searchpanel .btn-group div span {
+                float: right;
+                position: absolute;
+                right: -8px;
+                top: 5px;
+                color: white;
+                background-color: red;
+                width: 20px;
+                border-radius: 15px;
+                padding-left: 6px;
+            }
+
+.navbar {
+    margin-bottom: 0;
+}
+.nav-stacked{width: 170px;  margin: 0;  padding: 0;  float: left;  height: 100%; list-style: none; }
+.nav-stacked li.open { background-color: #FFF;  box-shadow: 0 0 36px #bac0c4;}
+.nav-stacked li.open .link { color: #337ab7; }
+.nav-stacked li.open i {  color: #337ab7; }
+.nav-stacked .link {cursor: pointer; display: block;  padding: 18px 18px 18px 48px;  color: #03418A; font-size: 16px;  font-weight: 800; position: relative;  transition: all 0.4s ease;}
+
+.nav-stacked li i { position: absolute; top: 18px;  left: 15px; font-size: 20px;
+    color: #03418A; transition: all 0.4s ease;}
+
+.nav-stacked li i.fa-angle-right {  font-style: normal; top: 22px;   right: 16px; left: auto; font-size: 14px;  }
+
+
+
+/**---------------------------leftBarMenu-----------------------------*/
+.accordion {
+    width: 170px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    height: 100%;
+}
+
+    .accordion .link {
+        cursor: pointer;
+        display: block;
+        padding: 18px 18px 18px 48px;
+        color: #03418A;
+        font-size: 16px;
+        font-weight: 800;
+        position: relative;
+        -webkit-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+    }
+
+        .accordion .link:hover, .accordion .link:hover i {
+            color: #337ab7;
+        }
+
+        .accordion li {
+            list-style-type: none;
+        }
+
+        .accordion li:last-child .link {
+            border-bottom: 0;
+        }
+
+        .accordion li i {
+            position: absolute;
+            top: 18px;
+            left: 15px;
+            font-size: 20px;
+            color: #03418A;
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+        }
+
+            .accordion li i.fa-angle-right {
+                font-style: normal;
+                top: 22px;
+                right: 16px;
+                left: auto;
+                font-size: 14px;
+            }
+
+            .accordion li.open {
+                background-color: #FFF;
+                box-shadow: 0 0 36px #bac0c4;
+            }
+
+        .accordion li.open .link {
+            color: #337ab7;
+        }
+
+            .accordion li.open .link:after {
+                border-style: solid;
+                border-width: 10px;
+                border-color: transparent;
+                border-left-color: #FFF;
+                content: '';
+                height: 0;
+                right: -20px;
+                pointer-events: none;
+                position: absolute;
+                top: 50%;
+                margin-top:-12px;
+                width: 0;
+            }
+
+            .accordion li.open i {
+                color: #337ab7;
+            }
+
+            .accordion li.open i.fa-angle-right {
+                -webkit-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+
+/**---------------------------Submenu-----------------------------*/
+.submenu {
+    display: none;
+    background: #FFF;
+    font-size: 16px;
+    padding: 0;
+}
+
+    .submenu a {
+        display: block;
+        text-decoration: none;
+        color: #337ab7;
+        padding: 15px 0;
+        margin: 0 12px 0 48px;
+        border-top: dotted 1px #CDCDCD;
+        -webkit-transition: all 0.25s ease;
+        -o-transition: all 0.25s ease;
+        transition: all 0.25s ease;
+    }
+
+    .submenu li:hover {
+        background: #67A7D0;
+        color: #FFF;
+        transition: all 0.25s ease;
+    }
+
+ .submenu li:hover a {
+            text-decoration: none;
+            color:#FFF;
+        }
+
+    .submenu .active {
+        background-color: #FFF;
+    }
+
+        .submenu .active a {
+            color: #337ab7;
+        }
+/**---------------------------leftBarMenu-End-----------------------------*/
+
+/*新改*/ #listview {
+    padding-top: 15px;
+    min-height: 545px;
+    width: 100%;background-color: #e8edf4;
+    /*border: 1px #3181C9 !important;*/
+    border: none;
+}
+
+/*新改*/ .material {
+    float: left;
+    position: relative;
+   
+    height: 160px;
+    background-image: linear-gradient(to top, #fafafa 0px, #fdfdfd 20%, #fff 60%);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 200px;
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 3px 0 #f2f2f2;
+    display: block;
+    margin: 0 0 15px 14px;
+    overflow: hidden;
+}
+
+.material:hover {
+    box-shadow: 0 0 12px #d1d7dc;
+}
+
+.incart {
+    background-color: #3181C9;
+}
+
+.notincart {
+    color: #676767; /*background-color:#ff0000 ;*/
+}
+
+.incart #btnadd {
+    display: none;
+}
+
+.incart #btnremove {
+    display: block;
+}
+
+.notincart #btnadd {
+    display: block;
+}
+
+.notincart #btnremove {
+    display: none;
+}
+
+.btRemove i {
+    color: #FF0000;
+}
+
+.btRemove:hover i {
+    color: #666;
+}
+
+.btAdd i {
+    color: #E52355;
+}
+
+.btAdd:hover i {
+    color: #3C8DC4;
+}
+
+/*新改*/ .material div {
+    margin: 0px;
+    padding: 0 0 5px 12px;
+    overflow: hidden;
+    font-weight: normal;
+}
+
+/*新改*/ .material .name {
+    line-height: 1.4em;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-right: 10px;
+    color: #000;
+}
+
+.material .typename {
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    width: 100%;
+    float: left;
+}
+
+.material .orgname {
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    width: 100%;
+    /*display: float;
+    float: right;*/
+}
+
+.material .optrname {
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    width: 100%;
+    display: float;
+    float: left;
+}
+
+.material .optbtn {
+    position: absolute;
+    right: 12px;
+    bottom: 0;
+    width: 75px;
+}
+
+    .material .optbtn label {
+        margin-bottom: 0;
+    }
+
+    .material .optbtn span {
+        display: inline-block;
+        float: left;
+        padding-top: 4px;
+        font-size: 14px;
+    }
+
+        .material .optbtn span input {
+            margin-top: 0;
+            margin-left: -16px;
+            margin-top: 3px;
+        }
+
+    .material .optbtn a i {
+        font-size: 24px;
+        float: right;
+    }
+
+.material p {
+    visibility: hidden;
+}
+
+.material:hover {
+    visibility: visible;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.k-listview:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.borrowCart:before {
+    content: "借用车清单";
+    color: #666;
+    font-size: 1.8em;
+    margin-left: 1em;
+}
+
+.borrowCart .material:first-child {
+    margin-top: 15px;
+}
+
+.borrowCart .material {
+    clear: both;
+    width: auto;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 96%;
+    height: auto;
+    position: relative;
+}
+
+    .borrowCart .material .typename, .borrowCart .material .orgname, .borrowCart .material .optrname {
+        float: left;
+        width: auto;
+        padding-bottom: 8px;
+        margin-right: 10px;
+    }
+
+    .borrowCart .material .optbtn {
+        bottom: 30%;
+        right: 15px;
+        padding: 0;
+    }
+
+
+/*20170627-新增项目*/
+.container {
+    position: relative;
+}
+
+    .container .userPanel {
+        right: 15px;
+        top: 50px !important;
+    }
+
+.userPanel .nav-arrow {
+    border-color: transparent transparent #c6c6c6;
+    border-style: solid;
+    border-width: 0 9px 9px;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+    top: -9px;
+    width: 0;
+    right: 50px;
+}
+
+.userPanel .nav-arrow-inner {
+    border-color: transparent transparent #fff;
+    border-style: solid;
+    border-width: 0 9px 9px;
+    font-size: 0;
+    height: 0;
+    left: -9px;
+    line-height: 0;
+    position: absolute;
+    top: 1px;
+    width: 0;
+}
+
+.navbar-collapse .navbar-right {
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.k-pager-wrap { padding:15px; }
+.listcontent .k-widget { border:none;
+}
+.checkbox input[type=checkbox], .optbtn .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+    margin-left: -15px;
+}
+
+.side{ background-color: #343957;border-right: solid 1px #bfbfbf;width: 10%;float: left; width:16%; width: 10%;float: left;height: 700px;
+position: fixed;top: 0;bottom: 0;left: 0;z-index: 98;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;}
+
+.navbar-default { background-color: #0a6bae;border-color: #e7e7e7; width: 100%;}
